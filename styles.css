@@ -300,15 +300,6 @@ nav a.nav-content-color {
     position: relative;
 }
 
-.easy-to-follow progress::-webkit-progress-value  {
-    /* Gradient background with Stripes */
-    background-color: #f7be26;
-}
-
-.easy-to-follow progress[value]::-moz-progress-bar {
-    background: #f7be26;
-    border-radius: 2px;
-}
 
 .comprehensive .rating-value {
     background-color:#abd8a5;
@@ -324,15 +315,6 @@ nav a.nav-content-color {
     position: relative;
 }
 
-.comprehensive progress::-webkit-progress-value  {
-    /* Gradient background with Stripes */
-    background-color: #75c36a;
-}
-
-.comprehensive progress[value]::-moz-progress-bar {
-    background: #75c36a;
-    border-radius: 2px;
-}
 
 .enough-examples .rating-value {
     background-color: #9ad6e8;
@@ -348,15 +330,6 @@ nav a.nav-content-color {
     position: relative;
 }
 
-.enough-examples progress::-webkit-progress-value  {
-    /* Gradient background with Stripes */
-    background-color: #5ac9e3;
-}
-
-.enough-examples progress[value]::-moz-progress-bar {
-    background: #5ac9e3;
-    border-radius: 2px;
-}
 
 .span-align-right {
     float: right;
