@@ -38,7 +38,7 @@ body{
   padding: 16px;
   box-sizing: border-box;
   margin: 0 auto;
-  background: url('//dl.dropboxusercontent.com/s/t3bqm1sqmxpj0dw/books_header_bg.jpg?raw=1');
+  background: url('http://dl.dropboxusercontent.com/s/t3bqm1sqmxpj0dw/books_header_bg.jpg?raw=1');
 }
 .header__branding {
   max-width: 530px;
@@ -65,6 +65,9 @@ body{
   color: #FFF;
 	letter-spacing: 1px;
   margin: 0;
+}
+.header__sub-title{
+  font-weight:bold;
 }
 .header__subtitle {
   font-size: .8rem;
@@ -198,6 +201,167 @@ nav a.nav-content-color {
   margin: 0;
   padding: 0;
 }
+.card-details{
+    font-weight: 300;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1.2em 0 1em 0;
+    font-size: .8em;
+}
+
+.card-details > div {
+    padding-right: 2em;
+}
+
+.card-details > div > span:nth-child(2){
+    margin-left: 1em;
+}
+
+.card-details > div:not(:nth-child(1)){
+    color: #9e9e9e;
+}
+
+.button {
+    border: 1px solid #eee;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.green-border{
+    border-color: #9dc32b;
+    color: #9dc32b;
+}
+
+.card-text-sections {
+    padding: 1rem 0;
+    display: flex;
+    font-size:.9rem;
+    color: #3c3c3c;
+    font-weight: 300;
+
+}
+
+.card-text-sections div p {
+    padding-bottom: .5rem;
+}
+
+.card-text-sections .card-text-sections-first_column {
+    width: 48%;
+    height: 100%;
+    padding-right: 1.5rem;
+    padding-top: 0.5rem;
+    border-right: 1px solid #eee;
+}
+
+.card-text-sections .card-text-sections-second_column{
+    width: 25%;
+    padding-left: 1.2rem;
+    padding-top: 0.5rem;
+}
+
+.rating-description {
+    padding-left: 7px;
+    margin-right: 5px;
+}
+
+.rating-value {
+    position: absolute;
+    text-align: center;
+    padding: 4px 5px;
+    width: 12px;
+    font-size: 0.7em;
+    bottom: 20px;
+    line-height: 1em;
+    border-radius: 3px;
+}
+
+.rating-value:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    top: 16px;
+    border: 3px solid;
+}
+
+.easy-to-follow .rating-value {
+    background-color:#fdd978;
+    color: #c3920f;
+}
+
+.easy-to-follow .rating-value:before {
+    border-color: #fdd978 transparent transparent #fdd978;
+}
+
+.easy-to-follow {
+    color: #f7be26;
+    position: relative;
+}
+
+.easy-to-follow progress::-webkit-progress-value  {
+    /* Gradient background with Stripes */
+    background-color: #f7be26;
+}
+
+.easy-to-follow progress[value]::-moz-progress-bar {
+    background: #f7be26;
+    border-radius: 2px;
+}
+
+.comprehensive .rating-value {
+    background-color:#abd8a5;
+    color: #4f9546;
+}
+
+.comprehensive .rating-value:before {
+    border-color: #abd8a5 transparent transparent #abd8a5;
+}
+
+.comprehensive {
+    color: #75c36a;
+    position: relative;
+}
+
+.comprehensive progress::-webkit-progress-value  {
+    /* Gradient background with Stripes */
+    background-color: #75c36a;
+}
+
+.comprehensive progress[value]::-moz-progress-bar {
+    background: #75c36a;
+    border-radius: 2px;
+}
+
+.enough-examples .rating-value {
+    background-color: #9ad6e8;
+    color: #1a8aa4;
+}
+
+.enough-examples .rating-value:before {
+    border-color: #9ad6e8 transparent transparent #9ad6e8;
+}
+
+.enough-examples {
+    color: #5ac9e3;
+    position: relative;
+}
+
+.enough-examples progress::-webkit-progress-value  {
+    /* Gradient background with Stripes */
+    background-color: #5ac9e3;
+}
+
+.enough-examples progress[value]::-moz-progress-bar {
+    background: #5ac9e3;
+    border-radius: 2px;
+}
+
+.span-align-right {
+    float: right;
+}
+
 
 
 
