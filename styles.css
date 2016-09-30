@@ -278,6 +278,7 @@ nav a.nav-content-color {
   padding-top:3rem;
 }
 
+
 .rating-description {
     padding-left: 7px;
     margin-right: 5px;
@@ -456,7 +457,31 @@ nav a.nav-content-color {
   width:auto;
 }
 
-
+.image_book2{
+  position:absolute;
+  right:-23.5%;
+  top:1%;
+  margin-top:-0.5%;
+  height:420px;
+  width:auto;
+  bottom:20%;
+}
+.image_book2 img{
+  height:420px;
+  width:323px;
+}
+.image_book3{
+  position:absolute;
+  left:83%;
+  top:1%;
+  margin-top:-0.5%;
+  height:420px;
+  width:auto;
+  bottom:20%;
+}
+.image_book3 img{
+  height:420px;
+  width:auto;
 
 
 
