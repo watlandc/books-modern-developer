@@ -38,7 +38,7 @@ body{
   padding: 16px;
   box-sizing: border-box;
   margin: 0 auto;
-  background: url('//dl.dropboxusercontent.com/s/t3bqm1sqmxpj0dw/books_header_bg.jpg?raw=1');
+  background: url('http://dl.dropboxusercontent.com/s/t3bqm1sqmxpj0dw/books_header_bg.jpg?raw=1');
 }
 .header__branding {
   max-width: 530px;
@@ -65,6 +65,9 @@ body{
   color: #FFF;
 	letter-spacing: 1px;
   margin: 0;
+}
+.header__sub-title{
+  font-weight:bold;
 }
 .header__subtitle {
   font-size: .8rem;
@@ -176,7 +179,7 @@ nav a.nav-content-color {
 
 .list-item {
   position: relative;
-  height: 300px;
+  height: 420px;
   width: 800px;
   margin: auto;
 }
@@ -186,6 +189,12 @@ nav a.nav-content-color {
   width: 100%;
   border-radius: 2px;
   margin-bottom: 24px;
+  padding-left:20px;
+}
+.card h3 {
+  font-weight: 400;
+  font-size:1.3rem;
+  padding-top: 1rem;
 }
 .procurement {
   display: flex;
@@ -198,6 +207,147 @@ nav a.nav-content-color {
   margin: 0;
   padding: 0;
 }
+.card-details{
+    font-weight: 300;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1.2em 0 1em 0;
+    font-size: .8em;
+}
+
+.card-details > div {
+    padding-right: 1.5rem;
+}
+.card-details a{
+  text-decoration:none;
+  color:#4C63AB;
+}
+.card-details > div > span:nth-child(2){
+    margin-left: 1em;
+}
+
+.card-details > div:not(:nth-child(1)){
+    color: #9e9e9e;
+}
+
+.button {
+    border: 1px solid #eee;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.green-border{
+    border-color: #9dc32b;
+    color: #9dc32b;
+}
+
+.card-text-sections {
+    padding: 1rem 0;
+    display: flex;
+    font-size:.9rem;
+    color: #3c3c3c;
+    font-weight: 300;
+
+}
+
+.card-text-sections div p {
+    padding-bottom: .5rem;
+}
+
+.card-text-sections .card-text-sections-first_column {
+    width: 48%;
+    height: 100%;
+    padding-right: 1.5rem;
+    margin-top: -1rem;
+    border-right: 1px solid #eee;
+}
+
+.card-text-sections .card-text-sections-second_column{
+    width: 30%;
+    padding-left: 1.2rem;
+    padding-top: 0.5rem;
+    margin-top: -1rem;
+}
+
+.card-text-sections-first_column a{
+  text-decoration:none;
+  color:#4C63AB;
+  font-size:1rem;
+  font-weight:400;
+  padding-top:3rem;
+}
+
+.rating-description {
+    padding-left: 7px;
+    margin-right: 5px;
+}
+
+.rating-value {
+    position: absolute;
+    text-align: center;
+    padding: 4px 5px;
+    width: 12px;
+    font-size: 0.7em;
+    bottom: 20px;
+    line-height: 1em;
+    border-radius: 3px;
+}
+
+
+.easy-to-follow .rating-value {
+    background-color:#FCD03F;
+    color: #c3920f;
+}
+
+.easy-to-follow .rating-value:before {
+    border-color: #FCD03F transparent transparent #FCD03F;
+}
+
+.easy-to-follow {
+    color: #FCD03F;
+    position: relative;
+    padding: 5px;
+}
+
+
+.comprehensive .rating-value {
+    background-color:#ADFC61;
+    color: #2FAB00;
+}
+
+.comprehensive .rating-value:before {
+    border-color: #30AB26 transparent transparent 30AB26;
+}
+
+.comprehensive {
+    color: #30AB26;
+    position: relative;
+    padding: 5px;
+}
+
+
+.enough-examples .rating-value {
+    background-color: #3CC7FC;
+    color: #1a8aa4;
+}
+
+.enough-examples .rating-value:before {
+    border-color: #3CC7FC transparent transparent #3CC7FC;
+}
+
+.enough-examples {
+    color: #3CC7FC;
+    position: relative;
+    padding: 5px;
+}
+
+.span-align-right {
+    float: right;
+    position: absolute;
+    right:40px;
+}
+
 
 
 
@@ -217,8 +367,25 @@ nav a.nav-content-color {
   background-color: rgba(0, 0, 0, .5);
   /*z-index: 2;*/
 }
-
-
+.card-section-dialog {
+  padding-top:2rem;
+  padding-bottom: 1rem;
+}
+.card-section-dialog >p {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  border-bottom: 1px solid #ede7e1;
+  color:#4C63AB;
+  font-weight: 400;
+  cursor: pointer;
+}
+.card-section-dialog > p:nth-child(2){
+  margin-top: -0.5rem;
+}
+.card-section-dialog > p:last-child{
+  border-bottom: none;
+  margin-top: -0.5rem;
+}
 
 /*------------------------------------*\
   #FOOTER
@@ -271,9 +438,22 @@ nav a.nav-content-color {
 \*------------------------------------*/
 
 .header-image {
-  background: url('//dl.dropboxusercontent.com/s/t3bqm1sqmxpj0dw/books_header_bg.jpg?raw=1') repeat;
+  background: url('http://dl.dropboxusercontent.com/s/t3bqm1sqmxpj0dw/books_header_bg.jpg?raw=1') repeat;
   width: 100%;
   height: 10rem;
+}
+.image_book1{
+  position:absolute;
+  left:83%;
+  top:1%;
+  margin-top:-0.5%;
+  height:420px;
+  width:auto;
+  bottom:20%;
+}
+.image_book1 img{
+  height:420px;
+  width:auto;
 }
 
 
