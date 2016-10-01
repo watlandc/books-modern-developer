@@ -139,9 +139,10 @@ body{
 }
 .main-nav{
   display:flex;
-/*   justify-content:center; */
+  justify-content:center; 
   margin: 0 auto;
-  width: 910px;
+  width: 90%;
+  padding-left:10rem;
 }
 .navbar a{
   display:block;
@@ -256,7 +257,7 @@ nav a.nav-content-color {
 }
 
 .card-text-sections .card-text-sections-first_column {
-    width: 48%;
+    width: 40%;
     height: 100%;
     padding-right: 1.5rem;
     margin-top: -1rem;
@@ -277,6 +278,7 @@ nav a.nav-content-color {
   font-weight:400;
   padding-top:3rem;
 }
+
 
 .rating-description {
     padding-left: 7px;
@@ -345,10 +347,32 @@ nav a.nav-content-color {
 .span-align-right {
     float: right;
     position: absolute;
-    right:40px;
+    right:5px;
+}
+.arrow-right{
+  padding-left:6rem;
+  vertical-align: middle;
+}
+.arrow-right-align{
+  padding-left:7.6rem;
+  vertical-align: middle;
 }
 
-
+progress[value]{
+  -webkit-appearance: none;
+  appearance: none;
+  width:15rem;
+  height:3px;
+}
+.easy-to-follow progress[value]::-webkit-progress-value {
+  background-color:#FCD03F;
+}
+.comprehensive progress[value]::-webkit-progress-value {
+  background-color:#30AB26;
+}
+.enough-examples progress[value]::-webkit-progress-value {
+  background-color:#3CC7FC;
+}
 
 
 /*------------------------------------*\
@@ -372,8 +396,8 @@ nav a.nav-content-color {
   padding-bottom: 1rem;
 }
 .card-section-dialog >p {
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
+  // padding-top: 0.1rem;
+  margin-top: -0.3rem;
   border-bottom: 1px solid #ede7e1;
   color:#4C63AB;
   font-weight: 400;
@@ -442,7 +466,7 @@ nav a.nav-content-color {
   width: 100%;
   height: 10rem;
 }
-.image_book1{
+.image_book1,.image_book3{
   position:absolute;
   left:83%;
   top:1%;
@@ -451,11 +475,24 @@ nav a.nav-content-color {
   width:auto;
   bottom:20%;
 }
-.image_book1 img{
+.image_book1 img,.image_book3 img{
   height:420px;
   width:auto;
 }
 
+.image_book2{
+  position:absolute;
+  right:-23.5%;
+  top:1%;
+  margin-top:-0.5%;
+  height:420px;
+  width:auto;
+  bottom:20%;
+}
+.image_book2 img{
+  height:420px;
+  width:323px;
+}
 
 
 
