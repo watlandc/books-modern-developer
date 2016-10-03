@@ -24,6 +24,7 @@ body{
 
 
 
+
 /*------------------------------------*\
   #HEADER-STYLES
 \*------------------------------------*/
@@ -86,9 +87,18 @@ body{
   flex: 1;
   height: 36px;
 	padding: 10px;
-	background-color: rgba(237,237,237,.7);
-	border: none;
+	background-color: rgba(255, 255, 255, .7);
   border-radius: 2px 0 0 2px;
+  border: none;
+  color: rgba(0, 0, 0, .87);
+  font-size: 16px !important;
+  font-family: var(--font-family);
+}
+.search__input:focus {
+  outline: none;
+}
+.search__input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
 }
 .search__btn {
   text-align: center;
@@ -101,7 +111,6 @@ body{
 .icon-search {
   vertical-align: middle;
 }
-
 ::-webkit-input-placeholder {
   color: rgba(84,127,28,.6);
   font-size: 14px;
@@ -118,6 +127,7 @@ body{
   color:rgba(84,127,28,.6);
   font-size: 14px;
 }
+
 
 
 
@@ -141,18 +151,17 @@ body{
   display:flex;
   justify-content:center; 
   margin: 0 auto;
-  width: 90%;
-  padding-left:10rem;
+  width: 900px;
 }
-.navbar a{
-  display:block;
-  text-decoration:none;
+.menu-item {
+  display: block;
+  text-decoration: none;
   color: #9e9e9e;
   font-size: 15px;
-  padding:15px;
+  padding: 15px;
 }
 nav a.nav-content-color {
-  color:#9dc32b;
+  color: #9dc32b;
 }
 
 
@@ -209,68 +218,58 @@ nav a.nav-content-color {
   padding: 0;
 }
 .card-details{
-    font-weight: 300;
-    display: flex;
-    justify-content: flex-start;
-    padding: 1.2em 0 1em 0;
-    font-size: .8em;
+  font-weight: 300;
+  display: flex;
+  justify-content: flex-start;
+  padding: 1.2em 0 1em 0;
+  font-size: .8em;
 }
-
 .card-details > div {
-    padding-right: 1.5rem;
+  padding-right: 1.5rem;
 }
 .card-details a{
   text-decoration:none;
   color:#4C63AB;
 }
 .card-details > div > span:nth-child(2){
-    margin-left: 1em;
+  margin-left: 1em;
 }
-
 .card-details > div:not(:nth-child(1)){
-    color: #9e9e9e;
+  color: #9e9e9e;
 }
-
 .button {
-    border: 1px solid #eee;
-    padding: 5px 10px;
-    border-radius: 3px;
-    cursor: pointer;
+  border: 1px solid #eee;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
 }
-
 .green-border{
-    border-color: #9dc32b;
-    color: #9dc32b;
+  border-color: #9dc32b;
+  color: #9dc32b;
 }
-
 .card-text-sections {
-    padding: 1rem 0;
-    display: flex;
-    font-size:.9rem;
-    color: #3c3c3c;
-    font-weight: 300;
-
+  padding: 1rem 0;
+  display: flex;
+  font-size:.9rem;
+  color: #3c3c3c;
+  font-weight: 300;
 }
-
 .card-text-sections div p {
-    padding-bottom: .5rem;
+  padding-bottom: .5rem;
 }
-
 .card-text-sections .card-text-sections-first_column {
-    width: 40%;
-    height: 100%;
-    padding-right: 1.5rem;
-    margin-top: -1rem;
-    border-right: 1px solid #eee;
+  width: 40%;
+  height: 100%;
+  padding-right: 1.5rem;
+  margin-top: -1rem;
+  border-right: 1px solid #eee;
 }
-
 .card-text-sections .card-text-sections-second_column{
-    width: 30%;
-    padding-left: 1.2rem;
-    padding-top: 0.5rem;
-    margin-top: -1rem;
+  width: 30%;
+  padding-left: 1.2rem;
+  padding-top: 0.5rem;
+  margin-top: -1rem;
 }
-
 .card-text-sections-first_column a{
   text-decoration:none;
   color:#4C63AB;
@@ -278,76 +277,60 @@ nav a.nav-content-color {
   font-weight:400;
   padding-top:3rem;
 }
-
-
 .rating-description {
     padding-left: 7px;
     margin-right: 5px;
 }
-
 .rating-value {
-    position: absolute;
-    text-align: center;
-    padding: 4px 5px;
-    width: 12px;
-    font-size: 0.7em;
-    bottom: 20px;
-    line-height: 1em;
-    border-radius: 3px;
+  position: absolute;
+  text-align: center;
+  padding: 4px 5px;
+  width: 12px;
+  font-size: 0.7em;
+  bottom: 20px;
+  line-height: 1em;
+  border-radius: 3px;
 }
-
-
 .easy-to-follow .rating-value {
-    background-color:#FCD03F;
-    color: #c3920f;
+  background-color:#FCD03F;
+  color: #c3920f;
 }
-
 .easy-to-follow .rating-value:before {
-    border-color: #FCD03F transparent transparent #FCD03F;
+  border-color: #FCD03F transparent transparent #FCD03F;
 }
-
 .easy-to-follow {
-    color: #FCD03F;
-    position: relative;
-    padding: 5px;
+  color: #FCD03F;
+  position: relative;
+  padding: 5px;
 }
-
-
 .comprehensive .rating-value {
-    background-color:#ADFC61;
-    color: #2FAB00;
+  background-color:#ADFC61;
+  color: #2FAB00;
 }
-
 .comprehensive .rating-value:before {
-    border-color: #30AB26 transparent transparent 30AB26;
+  border-color: #30AB26 transparent transparent 30AB26;
 }
-
 .comprehensive {
-    color: #30AB26;
-    position: relative;
-    padding: 5px;
+  color: #30AB26;
+  position: relative;
+  padding: 5px;
 }
-
-
 .enough-examples .rating-value {
-    background-color: #3CC7FC;
-    color: #1a8aa4;
+  background-color: #3CC7FC;
+  color: #1a8aa4;
 }
-
 .enough-examples .rating-value:before {
-    border-color: #3CC7FC transparent transparent #3CC7FC;
+  border-color: #3CC7FC transparent transparent #3CC7FC;
 }
-
 .enough-examples {
-    color: #3CC7FC;
-    position: relative;
-    padding: 5px;
+  color: #3CC7FC;
+  position: relative;
+  padding: 5px;
 }
-
 .span-align-right {
-    float: right;
-    position: absolute;
-    right:5px;
+  float: right;
+  position: absolute;
+  right:5px;
 }
 .arrow-right{
   padding-left:6rem;
@@ -360,7 +343,7 @@ nav a.nav-content-color {
 
 progress[value]{
   -webkit-appearance: none;
-  appearance: none;
+  /*appearance: none;*/
   width:15rem;
   height:3px;
 }
@@ -373,6 +356,9 @@ progress[value]{
 .enough-examples progress[value]::-webkit-progress-value {
   background-color:#3CC7FC;
 }
+
+
+
 
 
 /*------------------------------------*\
@@ -389,14 +375,13 @@ progress[value]{
   left: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, .5);
-  /*z-index: 2;*/
 }
 .card-section-dialog {
   padding-top:2rem;
   padding-bottom: 1rem;
 }
 .card-section-dialog >p {
-  // padding-top: 0.1rem;
+  padding-top: 0.1rem;
   margin-top: -0.3rem;
   border-bottom: 1px solid #ede7e1;
   color:#4C63AB;
@@ -410,6 +395,10 @@ progress[value]{
   border-bottom: none;
   margin-top: -0.5rem;
 }
+
+
+
+
 
 /*------------------------------------*\
   #FOOTER
@@ -443,9 +432,6 @@ progress[value]{
 .footer__sub-title {
   color: #9F9F9F;
 }
-.footer__contact {
-  
-}
 .copyright {
   font-size: 12px;
   color: #676767;
@@ -456,6 +442,11 @@ progress[value]{
   color: #9F9F9F;
   margin: 2px 0 0;
 }
+
+
+
+
+
 
 /*------------------------------------*\
   #IMAGES
@@ -493,6 +484,8 @@ progress[value]{
   height:420px;
   width:323px;
 }
+
+
 
 
 
