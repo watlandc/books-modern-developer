@@ -45,14 +45,37 @@
   <!-- navigation -->
   
   <div class="nav-bar">
+
+    <!-- tab inputs -->
+
+    <input class="menu-item__input" type="radio" name="menu-items" id="tab--1" checked>
+    <input class="menu-item__input" type="radio" name="menu-items" id="tab--2">
+    <input class="menu-item__input" type="radio" name="menu-items" id="tab--3">
+    <input class="menu-item__input" type="radio" name="menu-items" id="tab--4">
+    <input class="menu-item__input" type="radio" name="menu-items" id="tab--5">
+    <input class="menu-item__input" type="radio" name="menu-items" id="tab--6">
+
     <nav class="site-nav">
-      <a href="#" class="menu-item">UI/UX Design</a>
-      <a href="#" class="menu-item">Web Programming</a>
-      <a href="#" class="menu-item">Frontend Development</a>
-      <a href="#" class="menu-item menu-item--selected">JavaScript</a>
-      <a href="#" class="menu-item">Mobile Development</a>
-      <a href="#" class="menu-item">Backend Development</a>
+      <label for="tab--1">
+        <a class="menu-item tab--1">UI/UX Design</a>
+      </label>
+      <label for="tab--2">
+        <a class="menu-item tab--2">Web Programming</a>
+      </label>
+      <label for="tab--3">
+        <a class="menu-item tab--3">Frontend Development</a>
+      </label>
+      <label for="tab--4">
+        <a class="menu-item tab--4">JavaScript</a>
+      </label>
+      <label for="tab--5">
+        <a class="menu-item tab--5">Mobile Development</a>
+      </label>
+      <label for="tab--6">
+        <a class="menu-item tab--6">Backend Development</a>
+      </label>
     </nav>
+
   </div>
   
 </header>
@@ -199,10 +222,21 @@
             <i class="material-icons md-dark md-18">close</i>
           </div>
           
+          <!-- dialog tab inputs -->
+          <input class="dialog__tabs__input" type="radio" name="dialog__tabs" id="dialog-tab--1" checked>
+          <input class="dialog__tabs__input" type="radio" name="dialog__tabs" id="dialog-tab--2">
+          <input class="dialog__tabs__input" type="radio" name="dialog__tabs" id="dialog-tab--3">
+
           <div class="dialog__tabs">
-            <a class="dialog__menu-item dialog__menu-item--selected">Search Inside</a>
-            <a class="dialog__menu-item">Table of Contents</a>
-            <a class="dialog__menu-item">Rate the Books</a>
+            <label for="dialog-tab--1">
+              <a class="dialog__menu-item dialog-tab--1">Search Inside</a>
+            </label>
+            <label for="dialog-tab--2">
+              <a class="dialog__menu-item dialog-tab--2">Table of Contents</a>
+            </label>
+            <label for="dialog-tab--3">
+              <a class="dialog__menu-item dialog-tab--3">Rate the Books</a>
+            </label>
           </div>
           
         </nav>
